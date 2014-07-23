@@ -1,0 +1,8 @@
+Markdown==2.4.1
+astroid==1.1.1
+flake8==2.2.2
+logilab-common==0.62.0
+mccabe==0.2.1
+pep8==1.5.7
+pyflakes==0.8.1
+pylint==1.2.1
