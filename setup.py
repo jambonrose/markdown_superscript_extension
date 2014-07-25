@@ -11,39 +11,35 @@ Markdown Superscript Extension Distutils Setup
 """
 
 from setuptools import setup
+from codecs import open
+from os import path
 
 
-long_description="""
-.. role:: html(code)
-       :language: latex
+here = path.abspath(path.dirname(__file__))
 
-An extension to the `Python Markdown`_ project which adds the ability to superscript text. To do so, the character :code:`^` becomes a Markdown tag for text meant to be superscripted, and is replaced with the HTML :html:`sup` tag.
 
-For example, given the text: :code:`2^10^ is 1024.`, using `Python Markdown`_ with this extension will output output :html:`<p>2<sup>10</sup> is 1024.</p>`.
-
-.. _`Python Markdown`: https://pypi.python.org/pypi/Markdown
-
-Usage
------
-
->>> from markdown import markdown
->>> text = "2^10^ is 1024."
->>> markdown(text, ['superscript'])
-'<p>2<sup>10</sup> is 1024.</p>'
-
-"""
+# Get the long description from the relevant file
+with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
+    long_description = f.read()
 
 
 setup(
-    name='Markdown Superscript',
-    version='1.0b1', # PEP 386 Compliant Semantic Versioning
+    name='Markdown-Superscript',
+
+    version='1.0b1', # PEP 440 Compliant Semantic Versioning
+
+    keywords='text filter markdown html superscript',
     description='Python-Markdown extension to allow for superscript text.',
     long_description=long_description,
+
     author='Andrew Pinkham',
     author_email='hello at andrewsforge dot com',
+
     url='https://github.com/jambonrose/markdown_superscript_extension',
+
     py_modules=['mdx_superscript'],
     install_requires=['Markdown>=2.0'],
+
     license = 'Simplified BSD License',
     classifiers=[
         'Development Status :: 4 - Beta',
