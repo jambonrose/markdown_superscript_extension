@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/jambonrose/markdown_superscript_extension.svg?branch=master)](https://travis-ci.org/jambonrose/markdown_superscript_extension)
 
+[![Coverage Status](https://img.shields.io/coveralls/jambonrose/markdown_superscript_extension.svg)](https://coveralls.io/r/jambonrose/markdown_superscript_extension)
+
 An extension to [Waylan Limberg](https://github.com/waylan)'s [Python Markdown](https://github.com/waylan/Python-Markdown) project ([documentation here](https://pythonhosted.org/Markdown/index.html)) that provides support for superscript text in Markdown. The extension treats `^` characters as tags, converting pairs into HTML `sup` tags.
 
 Given the text:
