@@ -1,12 +1,10 @@
-# Python Markdown Extension: Superscript
+# Markdown Superscript
 
 [![Build Status](https://travis-ci.org/jambonrose/markdown_superscript_extension.svg?branch=master)](https://travis-ci.org/jambonrose/markdown_superscript_extension)
 
-An extension to [Waylan Limberg](https://github.com/waylan)'s [Python Markdown](https://github.com/waylan/Python-Markdown) project ([documentation here](https://pythonhosted.org/Markdown/index.html)).
+An extension to [Waylan Limberg](https://github.com/waylan)'s [Python Markdown](https://github.com/waylan/Python-Markdown) project ([documentation here](https://pythonhosted.org/Markdown/index.html)) that provides support for superscript text in Markdown. The extension treats `^` characters as tags, converting pairs into HTML `sup` tags.
 
-The goal of the extension is to provide support for basic superscript text in Markdown. To do so, the character `^` becomes a Markdown tag for text meant to be superscripted, and is replaced with the HTML `sup` tag.
-
-For example, given the text:
+Given the text:
 
     2^10^ is 1024.
 
@@ -26,13 +24,6 @@ To install the development version:
     pip install git+git://github.com/jambonrose/markdown_superscript_extension.git
 
 ## Basic Usage
-
-[Python Markdown](https://github.com/waylan/Python-Markdown) can be used in two ways:
-
-1. directly in Python
-2. via the command line
-
-Extensions are accessible in both cases.
 
 ### Python
 
