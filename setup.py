@@ -11,26 +11,26 @@ Markdown Superscript Extension Distutils Setup
 """
 
 from setuptools import setup
-from codecs import open
+from codecs import open as codec_open
 from os import path
 
 
-here = path.abspath(path.dirname(__file__))
+HERE = path.abspath(path.dirname(__file__))
 
 
 # Get the long description from the relevant file
-with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
-    long_description = f.read()
+with codec_open(path.join(HERE, 'DESCRIPTION.rst'), encoding='utf-8') as f:
+    LONG_DESCRIPTION = f.read()
 
 
 setup(
     name='Markdown-Superscript',
 
-    version='1.0b1', # PEP 440 Compliant Semantic Versioning
+    version='1.0b1',  # PEP 440 Compliant Semantic Versioning
 
     keywords='text filter markdown html superscript',
     description='Python-Markdown extension to allow for superscript text.',
-    long_description=long_description,
+    long_description=LONG_DESCRIPTION,
 
     author='Andrew Pinkham',
     author_email='hello at andrewsforge dot com',
@@ -40,7 +40,7 @@ setup(
     py_modules=['mdx_superscript'],
     install_requires=['Markdown>=2.0'],
 
-    license = 'Simplified BSD License',
+    license='Simplified BSD License',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
