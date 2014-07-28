@@ -8,7 +8,7 @@ python:
     - "pypy"
 install: 
     - "pip install ."
-    - "pip install -r test_requirements.txt"
+    - "pip install -r requirements/test_requirements.txt"
 script:
     - "nosetests --with-coverage --cover-package=mdx_superscript"
 after_success:
