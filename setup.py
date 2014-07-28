@@ -24,7 +24,7 @@ with codec_open(path.join(HERE, 'DESCRIPTION.rst'), encoding='utf-8') as f:
 
 
 setup(
-    name='Markdown-Superscript',
+    name='MarkdownSuperscript',
 
     version='1.0b1',  # PEP 440 Compliant Semantic Versioning
 
