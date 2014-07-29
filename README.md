@@ -64,4 +64,4 @@ $ cat requirements/* > requirements.txt
 $ pip install -r requirements.txt
 ```
 
-The `Makefile` provides the ability to run tests by invoking `$ make test`, which will invoked the nose package with the command `$ nosetests --with-coverage --cover-package=mdx_superscript` (incidentally, this is also the command used on [TravisCI](https://travis-ci.org/jambonrose/markdown_superscript_extension) and [Coveralls.io](https://coveralls.io/r/jambonrose/markdown_superscript_extension).
+The `Makefile` provides the ability to run tests by invoking `$ make test`, which will invoke the nose package with the command `$ nosetests --with-coverage --cover-package=mdx_superscript` (incidentally, this is also the command used on [TravisCI](https://travis-ci.org/jambonrose/markdown_superscript_extension) and [Coveralls.io](https://coveralls.io/r/jambonrose/markdown_superscript_extension).
