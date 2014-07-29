@@ -22,4 +22,4 @@ clean:
 	rm -rf __pycache__
 	rm -rf build
 	rm -rf dist
-	rm -rf Markdown_Superscript.egg-info
+	rm -rf *.egg-info
