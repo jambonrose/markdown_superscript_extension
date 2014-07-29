@@ -1,7 +1,13 @@
-.PHONY: test dist release clean
+.PHONY: test description check dist release clean
 
 test:
 	nosetests --with-coverage --cover-package=mdx_superscript
+
+description:
+	rst2html.py DESCRIPTION.rst > description.html
+
+check:
+	python setup.py check
 
 dist:
 	python setup.py sdist --formats=gztar,zip bdist_wheel
