@@ -25,9 +25,9 @@ from markdown.inlinepatterns import SimpleTagPattern
 SUPERSCRIPT_RE = r'(\^)([^\^]+)\2'
 
 
-def makeExtension(configs=None):
+def makeExtension(*args, **kwargs):
     """Inform Markdown of the existence of the extension."""
-    return SuperscriptExtension(configs=dict(configs))
+    return SuperscriptExtension(*args, **kwargs)
 
 
 class SuperscriptExtension(Extension):
