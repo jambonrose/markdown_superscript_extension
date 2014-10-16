@@ -6,7 +6,11 @@ python:
     - "3.3"
     - "3.4"
     - "pypy"
-install: 
+env:
+  - MD_VERSION=2.4.1
+  - MD_VERSION=2.5.1
+install:
+    - "pip install -q Markdown==$MD_VERSION"
     - "pip install ."
     - "pip install -r requirements/test_requirements.txt"
 script:
