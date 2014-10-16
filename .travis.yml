@@ -17,3 +17,7 @@ script:
   - "nosetests --with-coverage --cover-package=mdx_superscript"
 after_success:
   - "coveralls"
+matrix:
+  exclude:
+    - python: "2.6"
+      env: "MD_VERSION=2.5.1"
