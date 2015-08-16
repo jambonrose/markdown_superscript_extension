@@ -14,7 +14,7 @@ install:
   - "pip install ."
   - "pip install -r requirements/test_requirements.txt"
 script:
-  - "nosetests --with-coverage --cover-package=mdx_superscript"
+  - "nosetests --with-coverage --cover-branches --cover-package=mdx_superscript"
 after_success:
   - "coveralls"
 matrix:
