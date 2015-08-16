@@ -3,6 +3,9 @@
 test:
 	nosetests --with-coverage --cover-package=mdx_superscript
 
+tox:
+	tox
+
 description:
 	rst2html.py DESCRIPTION.rst > description.html
 
