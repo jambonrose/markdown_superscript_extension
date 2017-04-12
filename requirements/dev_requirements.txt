@@ -1,6 +1,6 @@
 docutils==0.13.1
 flake8==3.3.0
-pylint
+pylint==1.6.5
 tox
 twine
 wheel
