@@ -12,7 +12,7 @@ Will output:
     2<sup>10</sup> is 1024.
 
 :website: https://github.com/jambonrose/markdown_superscript_extension
-:copyright: Copyright 2014 Andrew Pinkham
+:copyright: Copyright 2014-2017 Andrew Pinkham
 :license: Simplified BSD, see LICENSE for details.
 """
 
