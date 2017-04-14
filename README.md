@@ -1,8 +1,8 @@
 # Markdown Superscript
 
-[![Build Status](https://travis-ci.org/jambonrose/markdown_superscript_extension.svg?branch=master)](https://travis-ci.org/jambonrose/markdown_superscript_extension)
+[![Build Status](https://travis-ci.org/jambonrose/markdown_superscript_extension.svg?branch=development)](https://travis-ci.org/jambonrose/markdown_superscript_extension)
 [![Coverage Status](https://img.shields.io/coveralls/jambonrose/markdown_superscript_extension.svg)](https://coveralls.io/r/jambonrose/markdown_superscript_extension)
-[![Requirements Status](https://requires.io/github/jambonrose/markdown_superscript_extension/requirements.svg?branch=master)](https://requires.io/github/jambonrose/markdown_superscript_extension/requirements/?branch=master)
+[![Requirements Status](https://requires.io/github/jambonrose/markdown_superscript_extension/requirements.svg?branch=development)](https://requires.io/github/jambonrose/markdown_superscript_extension/requirements/?branch=development)
 [![PyPI Version](http://img.shields.io/pypi/v/MarkdownSuperscript.svg)](https://pypi.python.org/pypi/MarkdownSuperscript/)
 
 [![Python Implementation Support](https://img.shields.io/pypi/implementation/MarkdownSuperscript.svg)](https://pypi.python.org/pypi/MarkdownSuperscript/)
