@@ -28,7 +28,7 @@ setup(
 
     version='1.0.1',  # PEP 440 Compliant Semantic Versioning
 
-    keywords='text filter markdown html superscript',
+    keywords=['text', 'filter', 'markdown', 'html', 'superscript'],
     description='Python-Markdown extension to allow for superscript text.',
     long_description=LONG_DESCRIPTION,
 
