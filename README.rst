@@ -28,8 +28,8 @@ Tests: |Build| |Coverage| |PyUp| |Requirements|
         :target: https://travis-ci.org/jambonrose/markdown_superscript_extension
         :alt: Build Status
 
-.. |Coverage| image:: https://img.shields.io/coveralls/jambonrose/markdown_superscript_extension.svg
-        :target: https://coveralls.io/r/jambonrose/markdown_superscript_extension
+.. |Coverage| image:: https://codecov.io/gh/jambonrose/markdown_superscript_extension/branch/development/graph/badge.svg
+        :target: https://codecov.io/gh/jambonrose/markdown_superscript_extension
         :alt: Coverage Status
 
 .. |PyUp| image:: https://pyup.io/repos/github/jambonrose/markdown_superscript_extension/shield.svg
