@@ -21,4 +21,4 @@ install:
 script:
   - nosetests --with-coverage --cover-branches --cover-package=mdx_superscript
 after_success:
-  - coveralls
+  - codecov
