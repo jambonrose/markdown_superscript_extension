@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-==============================================
-Markdown Superscript Extension Distutils Setup
-==============================================
+====================================
+Markdown Superscript Extension Setup
+====================================
 
 :website: https://github.com/jambonrose/markdown_superscript_extension
 :copyright: Copyright 2014-2017 Andrew Pinkham
