@@ -1,1 +1,6 @@
-include DESCRIPTION.rst
+include AUTHORS.rst
+include README.rst
+
+include LICENSE
+
+recursive-include requirements *.txt
