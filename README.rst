@@ -1,4 +1,4 @@
-Latest Release: |Version|
+Latest Release: |Version| |Tag|
 
 Compatibility: |Implementation| |Python| |License|
 
@@ -8,6 +8,9 @@ Tests: |Build| |Coverage| |PyUp| |Requirements|
         :target: https://pypi.python.org/pypi/MarkdownSuperscript/
         :alt: PyPI Version
 
+.. |Tag| image:: https://img.shields.io/github/tag/jambonrose/markdown_superscript_extension.svg
+        :target: https://github.com/jambonrose/markdown_superscript_extension/releases
+        :alt: Github Tag
 
 .. |Implementation| image:: https://img.shields.io/pypi/implementation/MarkdownSuperscript.svg
         :target: https://pypi.python.org/pypi/MarkdownSuperscript/
