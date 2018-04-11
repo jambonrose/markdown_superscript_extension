@@ -2,11 +2,12 @@ Latest Release: |Version|
 
 Compatibility: |Implementation| |Python| |License|
 
-Tests: |Build| |Coverage| |Requirements|
+Tests: |Build| |Coverage| |PyUp| |Requirements|
 
 .. |Version| image:: http://img.shields.io/pypi/v/MarkdownSuperscript.svg
         :target: https://pypi.python.org/pypi/MarkdownSuperscript/
         :alt: PyPI Version
+
 
 .. |Implementation| image:: https://img.shields.io/pypi/implementation/MarkdownSuperscript.svg
         :target: https://pypi.python.org/pypi/MarkdownSuperscript/
@@ -27,6 +28,10 @@ Tests: |Build| |Coverage| |Requirements|
 .. |Coverage| image:: https://img.shields.io/coveralls/jambonrose/markdown_superscript_extension.svg
         :target: https://coveralls.io/r/jambonrose/markdown_superscript_extension
         :alt: Coverage Status
+
+.. |PyUp| image:: https://pyup.io/repos/github/jambonrose/markdown_superscript_extension/shield.svg
+        :target: https://pyup.io/repos/github/jambonrose/markdown_superscript_extension/
+        :alt: Updates
 
 .. |Requirements| image:: https://requires.io/github/jambonrose/markdown_superscript_extension/requirements.svg?branch=development
         :target: https://requires.io/github/jambonrose/markdown_superscript_extension/requirements/?branch=development
