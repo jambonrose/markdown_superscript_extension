@@ -3,4 +3,4 @@ docutils==0.14
 flake8==3.5.0
 tox==3.4.0
 twine==1.12.1
-wheel==0.31.1
+wheel==0.32.0
