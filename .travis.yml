@@ -28,7 +28,6 @@ matrix:
     - python: 3.7
       env: MD_VERSION=2.5 MD_NEXT=2.6
 install:
-  - pip install -U pip setuptools wheel
   - python setup.py develop
   - pip install -q "Markdown>=$MD_VERSION,<$MD_NEXT"
   - if [[ `python -V | grep -c -e 3.7` -eq 1 && "$MD_VERSION" == '3.0' ]]; then pip install -r requirements/lint_requirements.txt ; fi
