@@ -31,13 +31,13 @@ install:
   - pip install -U pip setuptools wheel
   - python setup.py develop
   - pip install -q "Markdown>=$MD_VERSION,<$MD_NEXT"
-  - pip install -r requirements/lint_requirements.txt
+  - if [[ `python -V | grep -c -e 3.7` -eq 1 && "$MD_VERSION" == '3.0' ]]; then pip install -r requirements/lint_requirements.txt ; fi
   - pip install -r requirements/test_requirements.txt
   - pip install codecov
 before_script:
   - pip freeze
 script:
-  - flake8 .
+  - if [[ `python -V | grep -c -e 3.7` -eq 1 && "$MD_VERSION" == '3.0' ]]; then flake8 . ; fi
   - pytest -v --cov --cov-report term-missing
 after_success:
   - codecov
