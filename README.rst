@@ -70,7 +70,7 @@ Dependencies:
 - Python 2.7, 3.3+
 
 - Markdown 2.5+
-  (Tested against latest patch version of Markdown 2.5 and 2.6)
+  (Tested against latest patch version of Markdown 2.5, 2.6, 3.0)
 
 To install the latest stable release (recommended):
 
@@ -94,7 +94,7 @@ Python
 
     >>> from markdown import markdown
     >>> text = "2^10^ is 1024."
-    >>> markdown(text, ['superscript'])
+    >>> markdown(text, extensions=['mdx_superscript'])
     '<p>2<sup>10</sup> is 1024.</p>'
 
 Command Line
@@ -103,4 +103,4 @@ Command Line
 .. code :: bash
 
     $ echo '2^10^ is 1024.' > text.md
-    $ python -m markdown -o html5 -x 'superscript' -f text.html text.md
+    $ python -m markdown -o html5 -x 'mdx_superscript' -f text.html text.md
