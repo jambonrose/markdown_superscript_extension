@@ -34,6 +34,8 @@ install:
   - pip install -r requirements/lint_requirements.txt
   - pip install -r requirements/test_requirements.txt
   - pip install codecov
+before_script:
+  - pip freeze
 script:
   - flake8 .
   - pytest -v --cov --cov-report term-missing
