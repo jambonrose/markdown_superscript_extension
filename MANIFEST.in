@@ -1,6 +1,19 @@
+exclude .bumpversion.cfg
+exclude .coveragerc
+exclude .flake8
+exclude .ignore
+exclude .isort.cfg
+exclude .pre-commit-config.yaml
+exclude .pyup.yml
+exclude .travis.yml
+exclude Makefile
+exclude tox.ini
 include AUTHORS.rst
-include README.rst
-
+include HISTORY.rst
 include LICENSE
-
+include LICENSE
+include pyproject.toml
+include README.rst
+include setup.cfg
 recursive-include requirements *.txt
+recursive-include tests *.py
