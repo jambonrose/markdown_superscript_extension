@@ -1,6 +1,7 @@
 2.1.0 (2018-10-07)
 ==================
     - Add support for Python-Markdown 3.0
+    - Add support for Python 3.7 and PyPy3
     - Switch tests to use PyTest
     - Tox now checks package distribution
 
