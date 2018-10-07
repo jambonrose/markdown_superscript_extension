@@ -114,7 +114,7 @@ class CustomCheckCommand(CheckCommand):
 
 setup(
     name="MarkdownSuperscript",
-    version="2.0.0",  # PEP 440 Compliant Semantic Versioning
+    version="2.1.0",  # PEP 440 Compliant Semantic Versioning
     keywords=["text", "filter", "markdown", "html", "superscript"],
     description="Python-Markdown extension to allow for superscript text.",
     long_description=long_description,
