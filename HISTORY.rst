@@ -2,13 +2,15 @@
 History
 =======
 
-Next Version!
--------------
+2.1.1 (2018-10-09)
+------------------
+- (Re-)Enable short-name module reference
+  (specific to Markdown v3; PR `#45`_)
 - Write documentation in Sphinx
 - Integrate Read The Docs
-- Rework existing restructured text documents
-- Fix badges in Read Me
+- Update badges in Read Me
 
+.. _#45: https://github.com/jambonrose/markdown_superscript_extension/pull/45
 
 2.1.0 (2018-10-07)
 ------------------
