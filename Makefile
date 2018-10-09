@@ -12,13 +12,15 @@ check:
 	python setup.py check
 
 clean:
-	find . -name "*.pyc" -delete
-	find . -name "__pycache__" -delete
 	rm -rf *.egg-info
 	rm -rf .coverage
+	rm -rf .eggs
+	rm -rf .pytest_cache
 	rm -rf .tox
 	rm -rf build
 	rm -rf dist
+	find . -name "*.pyc" -delete
+	find . -name "__pycache__" -delete
 
 dist:
 	python setup.py sdist --formats=gztar bdist_wheel

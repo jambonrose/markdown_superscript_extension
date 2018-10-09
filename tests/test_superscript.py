@@ -39,14 +39,7 @@ TEXT_DATA = [
             ),
             id="Full module name",
         ),
-        param(
-            ["superscript"],
-            marks=mark.skipif(
-                md_version >= (3, 0),
-                reason="Module matching by shortname removed in Markdown 3.0",
-            ),
-            id="Short module name",
-        ),
+        param(["superscript"], id="Short module name"),
     ],
 )
 def extensions(request):
