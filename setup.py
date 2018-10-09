@@ -145,7 +145,6 @@ setup(
     cmdclass={"check": CustomCheckCommand},
     py_modules=["mdx_superscript"],
     install_requires=["Markdown>=2.5,<3.1"],
-    test_suite="tests",
     tests_require=TESTS_REQUIRE,
     setup_requires=SETUP_REQUIRES_PYTEST_RUNNER,
     license="Simplified BSD License",
