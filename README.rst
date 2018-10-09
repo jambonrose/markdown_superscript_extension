@@ -1,23 +1,29 @@
 Latest Release: |Version| |Tag|
 
+Documentation: |Docs|
+
 Compatibility: |Implementation| |Python| |License|
 
 Tests: |Build| |Coverage| |PyUp| |Requirements|
 
 .. |Version| image:: http://img.shields.io/pypi/v/MarkdownSuperscript.svg
-        :target: https://pypi.python.org/pypi/MarkdownSuperscript/
+        :target: https://pypi.org/project/MarkdownSuperscript/
         :alt: PyPI Version
 
 .. |Tag| image:: https://img.shields.io/github/tag/jambonrose/markdown_superscript_extension.svg
         :target: https://github.com/jambonrose/markdown_superscript_extension/releases
         :alt: Github Tag
 
+.. |Docs| image:: https://readthedocs.org/projects/markdown_superscript_extension/badge/?version=latest
+        :target: http://markdown_superscript_extension.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
 .. |Implementation| image:: https://img.shields.io/pypi/implementation/MarkdownSuperscript.svg
-        :target: https://pypi.python.org/pypi/MarkdownSuperscript/
+        :target: https://pypi.org/project/MarkdownSuperscript/
         :alt: Python Implementation Support
 
 .. |Python| image:: https://img.shields.io/pypi/pyversions/MarkdownSuperscript.svg
-        :target: https://pypi.python.org/pypi/MarkdownSuperscript/
+        :target: https://pypi.org/project/MarkdownSuperscript/
         :alt: Python Support
 
 .. |License| image:: http://img.shields.io/pypi/l/MarkdownSuperscript.svg
@@ -40,70 +46,34 @@ Tests: |Build| |Coverage| |PyUp| |Requirements|
         :target: https://requires.io/github/jambonrose/markdown_superscript_extension/requirements/?branch=development
         :alt: Requirements Status
 
+
 =======
 Read Me
 =======
+
+.. start-pypi-description
 
 An extension to the `Python Markdown`_ project which adds the ability to
 superscript text. To do so, the character :code:`^` becomes a Markdown
 tag for text meant to be superscripted, and is replaced with the HTML
 :code:`sup` tag.
 
-For example, given the text: ::
+For example, the extension transforms the text directly below into the
+HTML shown after it.
+
+.. code-block:: text
 
     2^10^ is 1024.
 
-… using Markdown with this extension will output:
-
-.. code :: html
+.. code-block:: html
 
     <p>2<sup>10</sup> is 1024.</p>
 
 This project is provided under the `Simplified (2 Clause) BSD license`_,
 provided in full in the LICENSE file.
 
+Please read `the documentation`_ for more information.
+
 .. _`Python Markdown`: https://pypi.python.org/pypi/Markdown
 .. _`Simplified (2 Clause) BSD license`: http://choosealicense.com/licenses/bsd-2-clause/
-
-Installation
-------------
-
-Dependencies:
-
-- Python 2.7, 3.3+
-
-- Markdown 2.5+
-  (Tested against latest patch version of Markdown 2.5, 2.6, 3.0)
-
-To install the latest stable release (recommended):
-
-.. code :: bash
-
-    pip install MarkdownSuperscript
-
-To install the development version:
-
-.. code :: bash
-
-    pip install git+git://github.com/jambonrose/markdown_superscript_extension.git
-
-Basic Usage
------------
-
-Python
-^^^^^^
-
-.. code :: pycon
-
-    >>> from markdown import markdown
-    >>> text = "2^10^ is 1024."
-    >>> markdown(text, extensions=['mdx_superscript'])
-    '<p>2<sup>10</sup> is 1024.</p>'
-
-Command Line
-^^^^^^^^^^^^
-
-.. code :: bash
-
-    $ echo '2^10^ is 1024.' > text.md
-    $ python -m markdown -o html5 -x 'mdx_superscript' -f text.html text.md
+.. _`the documentation`: https://markdown-superscript-extension.readthedocs.io/en/latest/

@@ -1,20 +1,35 @@
-.. MarkdownSuperscript documentation master file, created by
-   sphinx-quickstart on Tue Oct  9 15:08:21 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Welcome to Markdown Superscript's documentation!
+================================================
 
-Welcome to MarkdownSuperscript's documentation!
-===============================================
+This Python package is an extension to the `Python Markdown`_ project
+which adds the ability to superscript text. To do so, the character
+:code:`~` becomes a Markdown tag for text meant to be superscripted, and
+is replaced with the HTML :code:`sup` tag.
+
+For example, the extension transforms the text directly below into the
+HTML shown after it.
+
+.. code-block:: text
+
+    2^10^ is 1024.
+
+.. code-block:: html
+
+    <p>2<sup>10</sup> is 1024.</p>
+
+The code is `Simplified (2 Clause) BSD license`_ and is available on `Github.`_
+
+.. _`Python Markdown`: https://pypi.org/project/Markdown/
+.. _`Simplified (2 Clause) BSD license`: https://choosealicense.com/licenses/bsd-2-clause/
+.. _`Github.`: https://github.com/jambonrose/markdown_superscript_extension
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   installation
+   usage
+   contributing
+   release
+   authors
+   history
