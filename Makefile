@@ -1,24 +1,15 @@
-.PHONY: check clean description dist release test
+.PHONY: all check clean dist release test
 
-test:
-	nosetests --with-coverage --cover-package=mdx_superscript
-
-tox:
-	tox
-
-description:
-	rst2html.py README.rst > readme.html
+all:
+	@echo 'Available Commands:'
+	@$(MAKE) -pRrq -f $(lastword $(MAKEFILE_LIST)) : 2>/dev/null \
+		| awk -v RS= -F: '/^# File/,/^# Finished Make data base/ {if ($$1 !~ "^[#.]") {print $$1}}' \
+		| sort \
+		| egrep -v -e '^[^[:alnum:]]' -e '^$@$$' \
+		| xargs -I {} echo '    {}'
 
 check:
 	python setup.py check
-
-dist:
-	python setup.py sdist --formats=gztar bdist_wheel
-	gpg --armor --detach-sign -u 5878672C -a dist/MarkdownSuperscript*.whl
-	gpg --armor --detach-sign -u 5878672C -a dist/MarkdownSuperscript*.tar.gz
-
-release:
-	twine upload dist/*
 
 clean:
 	find . -name "*.pyc" -delete
@@ -28,3 +19,12 @@ clean:
 	rm -rf .tox
 	rm -rf build
 	rm -rf dist
+
+dist:
+	python setup.py sdist --formats=gztar bdist_wheel
+
+release:
+	twine upload dist/*
+
+test:
+	python setup.py test
