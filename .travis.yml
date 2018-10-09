@@ -42,7 +42,9 @@ before_script:
 - pip freeze
 script:
 - if [[ `python -V | grep -c -e 3.7` -eq 1 && "$MD_VERSION" == '3.0' ]]; then flake8 . ; fi
-- if [[ `python -V | grep -c -e 3.6` -eq 1 && "$MD_VERSION" == '3.0' ]]; then cd docs && sphinx-build -W -b html -d _build/doctrees . _build/html; cd .. ; fi
+- cd docs
+- if [[ `python -V | grep -c -e 3.6` -eq 1 && "$MD_VERSION" == '3.0' ]]; then sphinx-build -W -b html -d _build/doctrees . _build/html ; fi
+- cd ..
 - pytest -v --cov --cov-report term-missing
 after_success:
 - codecov
