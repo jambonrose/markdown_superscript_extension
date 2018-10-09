@@ -124,7 +124,7 @@ class CustomCheckCommand(CheckCommand):
 
 setup(
     name="MarkdownSuperscript",
-    version="2.1.0",  # PEP 440 Compliant Semantic Versioning
+    version="2.1.1",  # PEP 440 Compliant Semantic Versioning
     keywords=["text", "filter", "markdown", "html", "superscript"],
     description="Python-Markdown extension to allow for superscript text.",
     long_description=LONG_DESCRIPTION,
@@ -145,7 +145,6 @@ setup(
     cmdclass={"check": CustomCheckCommand},
     py_modules=["mdx_superscript"],
     install_requires=["Markdown>=2.5,<3.1"],
-    test_suite="tests",
     tests_require=TESTS_REQUIRE,
     setup_requires=SETUP_REQUIRES_PYTEST_RUNNER,
     license="Simplified BSD License",

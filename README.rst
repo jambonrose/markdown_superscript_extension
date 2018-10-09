@@ -74,6 +74,6 @@ provided in full in the LICENSE file.
 
 Please read `the documentation`_ for more information.
 
-.. _`Python Markdown`: https://pypi.python.org/pypi/Markdown
+.. _`Python Markdown`: https://pypi.org/project/Markdown/
 .. _`Simplified (2 Clause) BSD license`: http://choosealicense.com/licenses/bsd-2-clause/
 .. _`the documentation`: https://markdown-superscript-extension.readthedocs.io/en/latest/
