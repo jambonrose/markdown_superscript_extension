@@ -55,8 +55,8 @@ def extensions(request):
 
 
 @mark.parametrize(TEXT_DATA_FIELDS, TEXT_DATA)
-def test_subscript_extension(markdown_text, expected_html, extensions):
-    """Test the subscript extensions
+def test_superscript_extension(markdown_text, expected_html, extensions):
+    """Test the superscript extensions
 
     PyTest parameterized arguments allow for multiple text inputs to be
     tested.
