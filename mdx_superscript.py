@@ -30,10 +30,7 @@ def makeExtension(*args, **kwargs):  # noqa: N802
 class SuperscriptExtension(Extension):
     """Extension: text between ^ characters will be superscripted."""
 
-    def extendMarkdown(self, md, md_globals):  # noqa: N802
-        """Insert 'superscript' pattern before 'not_strong' pattern."""
-        md.inlinePatterns.add(
-            "superscript",
-            SimpleTagPattern(SUPERSCRIPT_RE, "sup"),
-            "<not_strong",
-        )
+    def extendMarkdown(self, md):  # noqa: N802
+        """Insert 'superscript' pattern."""
+        # Priority of 75 corresponds to a place before the not_strong pattern
+        md.inlinePatterns.register(SimpleTagPattern(SUPERSCRIPT_RE, "sup"), "superscript", 75)
